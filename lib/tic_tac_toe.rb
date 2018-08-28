@@ -51,7 +51,7 @@ class TicTacToe
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index)
-      move(index, token = "X")
+      move(index, token = current_player)
       display_board(@board)
     else 
       puts "The position is already taken."
