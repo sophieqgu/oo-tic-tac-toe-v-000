@@ -16,7 +16,7 @@ class TicTacToe
       ]
   end 
     
-  def display_board(@board)
+  def display_board
     puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
     puts "-----------"
     puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
@@ -66,7 +66,6 @@ class TicTacToe
     @board.each do |token| 
       if token == "O" || token == "X"
         count ++
-      end 
     end 
     count 
   end 
@@ -130,5 +129,6 @@ class TicTacToe
       puts "Cat's Game!"
     end 
   end
- 
+
+end
 end 
