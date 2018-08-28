@@ -66,8 +66,9 @@ class TicTacToe
     @board.each do |token| 
       if token == "O" || token == "X"
         count ++
+      end
     end 
-    count 
+    return count 
   end 
     
   def current_player
