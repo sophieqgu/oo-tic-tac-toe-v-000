@@ -121,11 +121,11 @@ class TicTacToe
     puts "Welcome to Tic Tac Toe!"
     until over? 
       turn(input)
-      if won?
-        puts "Congratulations #{winner(@board)}!"
-      elsif draw?
-        puts "Cat's Game!"
-      end
+    end
+    if won?
+      puts "Congratulations #{winner(@board)}!"
+    elsif draw?
+      puts "Cat's Game!"
     end
   end
 
