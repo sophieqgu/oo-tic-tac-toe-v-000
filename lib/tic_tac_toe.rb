@@ -60,13 +60,13 @@ class TicTacToe
   end 
     
   def turn_count
-    count = 0 
-    @board.each do |token| 
-      if token == "O" || token == "X"
-        count ++
-      end
-    end 
-    count 
+  count = 0
+  @board.each do |index|
+    if index == "X" || index == "O"
+      count += 1
+    end
+  end
+  count
   end 
     
   def current_player
