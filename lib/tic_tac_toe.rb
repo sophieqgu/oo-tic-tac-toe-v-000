@@ -55,7 +55,7 @@ class TicTacToe
       display_board
     else 
       puts "The position is already taken."
-      input = gets.strip
+      turn(input)
     end 
   end 
     
