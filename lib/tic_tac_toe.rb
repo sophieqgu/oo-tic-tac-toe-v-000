@@ -120,7 +120,7 @@ class TicTacToe
   def play 
     puts "Welcome to Tic Tac Toe!"
     until over? 
-      turn(input)
+      turn
     end
     if won?
       puts "Congratulations #{winner(@board)}!"
